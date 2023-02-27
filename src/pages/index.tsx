@@ -110,6 +110,65 @@ export default function Home() {
             para trabajar como marca blanca para tu agencia.
           </Typography>
         </Box>
+        <Box
+          display='flex'
+          minWidth='100vw'
+          minHeight='80vh'
+          alignItems='center'
+          justifyContent='center'
+          flexDirection='column'
+          gap='50px'
+        >
+          <Typography
+            variant='h5'
+            maxWidth='30%'
+            textAlign='center'
+            fontWeight='bolder'
+            fontFamily='Poppins'
+          >
+            Deja de gastar en renta de oficinas, empleados y gastos fijos...
+          </Typography>
+          <Box
+            display='flex'
+            alignItems='center'
+            justifyContent='center'
+            gap='15px'
+            maxHeight='70%'
+          >
+            <Box minWidth='50%'></Box>
+            <Box maxWidth='50%'>
+              <Box
+                display='flex'
+                flexDirection='column'
+                alignItems='flex-start'
+                maxWidth='80%'
+                gap='15px'
+              >
+                <div>
+                  <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                    01.
+                  </Typography>
+                  Ofrece servicios de marketing digital como gestión de redes
+                  sociales, diseño de logos, creación de sitios web, tienda en
+                  Whatsapp y más con tus propios precios y tu propia marca.
+                  ¡Nosotros te trabajamos todo!
+                </div>
+                <div>
+                  {' '}
+                  <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                    02.
+                  </Typography>
+                  Nosotros tendremos el contacto directo contigo o con un
+                  representante de tu empresa y tú lo tendrás con tus clientes
+                  así garantizamos un servicio directo a tu empresa. Siendo tú
+                  el intermediario entre nosotros y tus clientes evitando el
+                  conocimiento de nuestros precios y trabajando para ti como
+                  marca blanca.{' '}
+                </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </main>
     </>
   );
