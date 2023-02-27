@@ -21,6 +21,7 @@ export default function Home() {
             display='flex'
             alignItems='center'
             justifyContent='center'
+            flexDirection={{ xs: 'column', md: 'row' }}
             height='100%'
             paddingTop='5%'
           >
@@ -28,35 +29,33 @@ export default function Home() {
               <h4 style={{ lineHeight: '0.5' }}>
                 <span
                   style={{
-                    fontSize: '2rem',
+                    fontSize: '1em',
                     fontWeight: 700,
                   }}
                 >
                   Abre tu propia
                 </span>
               </h4>
-              <h3 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '2.5rem', fontWeight: '700' }}>
-                  Agencia de Marketing
-                </span>
+              <h3 style={{ lineHeight: '0.5', fontSize: '1.5rem' }}>
+                <span style={{ fontWeight: '700' }}>Agencia de Marketing</span>
               </h3>
               <h3 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '1rem', fontWeight: '700' }}>
+                <span style={{ fontSize: '0.7rem', fontWeight: '700' }}>
                   queremos ser la otra mitad de tu emprendimiento
                 </span>
               </h3>
               <h1 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '5rem', fontWeight: 700 }}>
+                <span style={{ fontSize: '3rem', fontWeight: 700 }}>
                   50% DESC
                 </span>
               </h1>
               <h6 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '0.8rem', fontWeight: 700 }}>
+                <span style={{ fontSize: '0.5rem', fontWeight: 700 }}>
                   Vigencia del 23 al 28 de Febrero de 2023 CUPÓN: TUOTRAMITAD
                 </span>
               </h6>
               <h3 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '2rem', fontWeight: '700' }}>
+                <span style={{ fontSize: '1.8rem', fontWeight: '700' }}>
                   CUPÓN: TUOTRAMITAD
                 </span>
               </h3>
@@ -64,6 +63,7 @@ export default function Home() {
             <img
               src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Dise-C3-B1o-sin-t-C3-ADtulo--281-29-578w.png'
               alt='Img'
+              minWidth='240px'
               width='35%'
               height='100%'
             />
@@ -76,13 +76,16 @@ export default function Home() {
           display='flex'
           alignItems='center'
           justifyContent='center'
+          flexDirection={{ xs: 'column', md: 'row' }}
           gap='5%'
         >
           <Typography
             variant='h5'
             fontWeight='bold'
             color='#fff'
-            maxWidth='20%'
+            marginY='50px'
+            maxWidth={{ xs: '80%', md: '20%' }}
+            textAlign={{ xs: 'center', md: 'left' }}
           >
             ¿Quieres tener tu Agencia de Marketing Digital?
           </Typography>
@@ -95,14 +98,19 @@ export default function Home() {
               borderRadius: '5px',
               margin: 'auto 10px',
               height: '150px',
+
+              display: { xs: 'none', md: 'block' },
             }}
           />
           <Typography
             variant='body1'
-            fontSize='14px'
+            fontSize={{ xs: '11px', md: '14px' }}
             fontFamily='Poppins'
             color='#fff'
-            maxWidth='50%'
+            mb='50px'
+            padding='10px 25px'
+            maxWidth={{ xs: '90%', md: '50%' }}
+            borderLeft={{ xs: '2px solid #fff', md: 'none' }}
           >
             Iniciar tu negocio o hacer crecer tu agencia de marketing nunca fue
             tan fácil. Sin contratar empleados ni invertir en equipo e
@@ -112,6 +120,7 @@ export default function Home() {
         </Box>
         <Box
           display='flex'
+          mt='50px'
           minWidth='100vw'
           minHeight='80vh'
           alignItems='center'
@@ -121,7 +130,7 @@ export default function Home() {
         >
           <Typography
             variant='h5'
-            maxWidth='30%'
+            maxWidth={{ xs: '90%', md: '30%' }}
             textAlign='center'
             fontWeight='bolder'
             fontFamily='Poppins'
@@ -132,20 +141,27 @@ export default function Home() {
             display='flex'
             alignItems='center'
             justifyContent='center'
+            flexDirection={{ xs: 'column', md: 'row' }}
             gap='15px'
             maxHeight='70%'
           >
             <Box minWidth='50%'></Box>
-            <Box maxWidth='50%'>
+            <Box maxWidth={{ xs: '90%', md: '50%' }}>
               <Box
                 display='flex'
                 flexDirection='column'
-                alignItems='flex-start'
-                maxWidth='80%'
+                alignItems={{ xs: 'center', md: 'flex-start' }}
+                justifyContent={{ xs: 'center', md: 'normal' }}
+                maxWidth={{ xs: '100%', md: '80%' }}
                 gap='15px'
               >
                 <div>
-                  <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                  <Typography
+                    textAlign={{ xs: 'center', md: 'left' }}
+                    fontWeight='bold'
+                    variant='h5'
+                    color='#7b00ff'
+                  >
                     01.
                   </Typography>
                   Ofrece servicios de marketing digital como gestión de redes
@@ -155,7 +171,12 @@ export default function Home() {
                 </div>
                 <div>
                   {' '}
-                  <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                  <Typography
+                    fontWeight='bold'
+                    variant='h5'
+                    textAlign={{ xs: 'center', md: 'left' }}
+                    color='#7b00ff'
+                  >
                     02.
                   </Typography>
                   Nosotros tendremos el contacto directo contigo o con un
@@ -165,6 +186,66 @@ export default function Home() {
                   conocimiento de nuestros precios y trabajando para ti como
                   marca blanca.{' '}
                 </div>
+              </Box>
+            </Box>
+          </Box>
+
+          <Box
+            display='flex'
+            minWidth='100vw'
+            minHeight='80vh'
+            alignItems='center'
+            justifyContent='center'
+            flexDirection='column'
+            gap='50px'
+          >
+            <Typography
+              variant='h5'
+              maxWidth={{ xs: '90%', md: '30%' }}
+              textAlign='center'
+              fontWeight='bolder'
+              fontFamily='Poppins'
+            >
+              Servicios que ofrecemos como marca blanca para tu agencia
+            </Typography>
+            <Box
+              display='flex'
+              alignItems='center'
+              justifyContent='center'
+              gap='15px'
+              maxHeight='70%'
+            >
+              <Box minWidth='50%'></Box>
+              <Box maxWidth='50%'>
+                <Box
+                  display='flex'
+                  flexDirection='column'
+                  alignItems='flex-start'
+                  maxWidth='80%'
+                  gap='15px'
+                >
+                  <div>
+                    <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                      01.
+                    </Typography>
+                    Ofrece servicios de marketing digital como gestión de redes
+                    sociales, diseño de logos, creación de sitios web, tienda en
+                    Whatsapp y más con tus propios precios y tu propia marca.
+                    ¡Nosotros te trabajamos todo!
+                  </div>
+                  <div>
+                    {' '}
+                    <Typography fontWeight='bold' variant='h5' color='#7b00ff'>
+                      02.
+                    </Typography>
+                    Nosotros tendremos el contacto directo contigo o con un
+                    representante de tu empresa y tú lo tendrás con tus clientes
+                    así garantizamos un servicio directo a tu empresa. Siendo tú
+                    el intermediario entre nosotros y tus clientes evitando el
+                    conocimiento de nuestros precios y trabajando para ti como
+                    marca blanca.{' '}
+                  </div>
+                </Box>
               </Box>
             </Box>
           </Box>
