@@ -14,12 +14,13 @@ const Footer: React.FC = () => {
             'linear-gradient(180deg,#7300ff 0,#420488 100%)!important',
         }}
         minWidth='100vw'
-        height='300px'
+        minHeight='300px'
         marginTop='30px'
         padding='50px 40px'
         display='flex'
-        alignItems='center'
+        alignItems={{ xs: 'flex-start', md: 'center' }}
         justifyContent='space-evenly'
+        flexDirection={{ xs: 'column', md: 'row' }}
         gap='20px'
         color='#fff'
       >
