@@ -155,7 +155,7 @@ const Navbar: React.FC<Props> = () => {
   }
 
   return (
-    <Box sx={{ position: 'relative', top: 0, mb: '10vh' }}>
+    <Box sx={{ position: 'relative', top: 0 }}>
       <CssBaseline />
       <AppBar
         component='nav'
