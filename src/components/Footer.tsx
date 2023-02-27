@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             {REDES.map((r, index) => (
               <Link style={{ color: '#fff' }} key={r.label} href={r.href}>
                 {' '}
-                <ListItem>
+                <ListItem sx={{ paddingLeft: { xs: '0px', md: '16px' } }}>
                   <r.icon />
                 </ListItem>
               </Link>
