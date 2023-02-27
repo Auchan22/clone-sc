@@ -160,7 +160,7 @@ const Navbar: React.FC<Props> = () => {
       <AppBar
         component='nav'
         sx={{
-          backgroundColor: `${scrolled ? 'red' : 'transparent'}`,
+          backgroundColor: `${scrolled ? '#7b00ff' : 'transparent'}`,
           padding: `${scrolled ? '12px 15px' : 'transparent'}`,
           transition: 'all 250ms ease-in',
           boxShadow: 'none',

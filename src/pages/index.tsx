@@ -1,10 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
 import Hero from '@/components/Hero';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Box, Divider, Typography } from '@mui/material';
 
 export default function Home() {
   return (
@@ -17,12 +13,103 @@ export default function Home() {
       </Head>
       <main>
         <Hero
-          backgroundColor='blue'
-          mh='80vh'
+          backgroundColor='#8b0404'
+          mh='90vh'
           backgroundVIDEO='https://vid.cdn-website.com/7b521824/videos/bqJL7YHTgWpYoAys6Uuf_638308321-v.mp4'
         >
-          <div>Hola mundo</div>
+          <Box
+            display='flex'
+            alignItems='center'
+            justifyContent='center'
+            height='100%'
+            paddingTop='5%'
+          >
+            <Box textAlign='center' color='#fff'>
+              <h4 style={{ lineHeight: '0.5' }}>
+                <span
+                  style={{
+                    fontSize: '2rem',
+                    fontWeight: 700,
+                  }}
+                >
+                  Abre tu propia
+                </span>
+              </h4>
+              <h3 style={{ lineHeight: '0.5' }}>
+                <span style={{ fontSize: '2.5rem', fontWeight: '700' }}>
+                  Agencia de Marketing
+                </span>
+              </h3>
+              <h3 style={{ lineHeight: '0.5' }}>
+                <span style={{ fontSize: '1rem', fontWeight: '700' }}>
+                  queremos ser la otra mitad de tu emprendimiento
+                </span>
+              </h3>
+              <h1 style={{ lineHeight: '0.5' }}>
+                <span style={{ fontSize: '5rem', fontWeight: 700 }}>
+                  50% DESC
+                </span>
+              </h1>
+              <h6 style={{ lineHeight: '0.5' }}>
+                <span style={{ fontSize: '0.8rem', fontWeight: 700 }}>
+                  Vigencia del 23 al 28 de Febrero de 2023 CUPÓN: TUOTRAMITAD
+                </span>
+              </h6>
+              <h3 style={{ lineHeight: '0.5' }}>
+                <span style={{ fontSize: '2rem', fontWeight: '700' }}>
+                  CUPÓN: TUOTRAMITAD
+                </span>
+              </h3>
+            </Box>
+            <img
+              src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Dise-C3-B1o-sin-t-C3-ADtulo--281-29-578w.png'
+              alt='Img'
+              width='35%'
+              height='100%'
+            />
+          </Box>
         </Hero>
+        <Box
+          minWidth='100vw'
+          minHeight='40vh'
+          sx={{ backgroundColor: '#7b00ff' }}
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+          gap='5%'
+        >
+          <Typography
+            variant='h5'
+            fontWeight='bold'
+            color='#fff'
+            maxWidth='20%'
+          >
+            ¿Quieres tener tu Agencia de Marketing Digital?
+          </Typography>
+          <Divider
+            variant='middle'
+            flexItem
+            sx={{
+              borderColor: '#fff !important',
+              borderWidth: '1px',
+              borderRadius: '5px',
+              margin: 'auto 10px',
+              height: '150px',
+            }}
+          />
+          <Typography
+            variant='body1'
+            fontSize='14px'
+            fontFamily='Poppins'
+            color='#fff'
+            maxWidth='50%'
+          >
+            Iniciar tu negocio o hacer crecer tu agencia de marketing nunca fue
+            tan fácil. Sin contratar empleados ni invertir en equipo e
+            infraestructura. Contamos la experiencia personal e infraestructura
+            para trabajar como marca blanca para tu agencia.
+          </Typography>
+        </Box>
       </main>
     </>
   );

@@ -21,7 +21,7 @@ const Hero: React.FC<Props> = (props) => {
           left: 0,
           width: '100%',
           position: 'absolute',
-          height: '80%',
+          height: '100%',
         }}
       >
         {backgroundVIDEO && (
@@ -32,7 +32,6 @@ const Hero: React.FC<Props> = (props) => {
             loop
             muted
             style={{
-              objectPosition: '50% 50%',
               objectFit: 'cover',
               width: '100%',
               height: '100%',
@@ -51,7 +50,7 @@ const Hero: React.FC<Props> = (props) => {
           zIndex: -1,
         }}
       ></div>
-      <Box padding='40px 60px'>{children}</Box>
+      <Box>{children}</Box>
     </Box>
   );
 };
