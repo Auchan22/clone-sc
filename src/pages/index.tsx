@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import { Box, Divider, Typography } from '@mui/material';
 import Gastos from '@/components/Gastos';
 import Servicios from '@/components/Servicios';
+import Agencia from '@/components/Agencia';
 
 export default function Home() {
   return (
@@ -122,6 +123,7 @@ export default function Home() {
         </Box>
         <Gastos />
         <Servicios />
+        <Agencia />
       </main>
     </>
   );

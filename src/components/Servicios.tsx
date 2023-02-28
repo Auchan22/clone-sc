@@ -155,12 +155,11 @@ const Servicios: React.FC = () => {
                 <div
                   style={{
                     minHeight: '100%',
-                    minWidth: '40%',
-                    backgroundImage: `url(${s.img})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
+                    maxWidth: '40%',
                   }}
-                ></div>
+                >
+                  <img src={s.img} alt={s.title} width='100%' height='100%' />
+                </div>
                 <Box
                   display='flex'
                   flexDirection='column'
