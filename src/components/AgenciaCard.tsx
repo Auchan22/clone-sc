@@ -10,7 +10,7 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
   return (
     <Box
       minHeight='80vh'
-      width='25vw'
+      width={{ xs: '80%', md: '25vw' }}
       sx={{
         borderRadius: '10px',
         borderWidth: data.title === 'Startup' ? '10px 0px' : '1px',

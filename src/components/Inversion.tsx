@@ -39,11 +39,12 @@ const Inversion: React.FC = () => {
         display='flex'
         alignItems='center'
         justifyContent='center'
+        flexDirection={{ xs: 'column', md: 'row' }}
         gap='30px'
         minWidth='80%'
       >
         <Box
-          maxWidth='50%'
+          maxWidth={{ xs: '80%', md: '50%' }}
           display='flex'
           alignItems='center'
           flexDirection='column'
@@ -85,6 +86,7 @@ const Inversion: React.FC = () => {
               display='flex'
               alignItems='center'
               justifyContent='space-between'
+              flexDirection={{ xs: 'column', md: 'row' }}
               width='80%'
               fontFamily='Poppins'
             >
@@ -117,6 +119,7 @@ const Inversion: React.FC = () => {
               justifyContent='space-between'
               width='80%'
               fontFamily='Poppins'
+              flexDirection={{ xs: 'column', md: 'row' }}
             >
               <LinkButton label='10%' href='' />
               <LinkButton label='20%' href='' />
@@ -124,7 +127,7 @@ const Inversion: React.FC = () => {
             </Box>
           </Box>
         </Box>
-        <Box maxWidth='30%'>
+        <Box maxWidth={{ xs: '100%', md: '30%' }}>
           <img
             src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Socialconecta2-606w.png'
             alt='Imagen Inversiones'

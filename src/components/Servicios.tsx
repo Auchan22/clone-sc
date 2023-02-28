@@ -1,6 +1,13 @@
 import SERVICES from '@/assets/servicios';
 import { styled } from '@mui/material/styles';
-import { Box, Typography, Tab, Tabs, Button } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Tab,
+  Tabs,
+  Button,
+  useMediaQuery,
+} from '@mui/material';
 
 import * as React from 'react';
 import Link from 'next/link';
@@ -84,6 +91,8 @@ function a11yProps(index: number) {
 }
 
 const Servicios: React.FC = () => {
+  const matches = useMediaQuery('(min-width:320px)');
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -112,8 +121,9 @@ const Servicios: React.FC = () => {
         maxHeight='70%'
         display='flex'
         alignItems='center'
-        flexDirection='column'
+        flexDirection={{ xs: 'row', md: 'column' }}
         justifyContent='center'
+        minWidth={{ xs: '100vw' }}
       >
         <Box
           sx={{ borderBottom: 1, borderColor: 'divider' }}
@@ -126,6 +136,7 @@ const Servicios: React.FC = () => {
             aria-label='scrollable ant tabs example'
             variant='scrollable'
             scrollButtons='auto'
+            orientation={matches ? 'vertical' : 'horizontal'}
           >
             {SERVICES.map((s, index) => (
               <AntTab
@@ -141,16 +152,18 @@ const Servicios: React.FC = () => {
           return (
             <TabPanel value={value} key={index} index={index}>
               <Box
-                padding='40px 35px'
+                padding={{ xs: '0px', md: '40px 35px' }}
                 minHeight='80vh'
-                minWidth='70vw'
+                minWidth={{ xs: '80vw', md: '70vw' }}
                 display='flex'
                 justifyContent='center'
+                alignItems={{ xs: 'center', md: 'auto' }}
+                flexDirection={{ xs: 'column', md: 'row' }}
               >
                 <div
                   style={{
                     minHeight: '100%',
-                    maxWidth: '40%',
+                    maxWidth: matches ? '100%' : '40%',
                   }}
                 >
                   <img src={s.img} alt={s.title} width='100%' height='100%' />
@@ -160,7 +173,7 @@ const Servicios: React.FC = () => {
                   flexDirection='column'
                   alignItems='center'
                   justifyContent='center'
-                  maxWidth='30%'
+                  maxWidth={{ xs: '70%', md: '30%' }}
                 >
                   <Typography
                     fontFamily='Poppins'

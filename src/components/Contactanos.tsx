@@ -50,6 +50,7 @@ const Contactanos: React.FC = () => {
           alignItems='center'
           gap='20px'
           justifyContent='center'
+          flexDirection={{ xs: 'column', md: 'row' }}
         >
           {CONTACTO.map((c, index) => (
             <ContactoCard data={c} key={index} />

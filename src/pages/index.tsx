@@ -6,6 +6,7 @@ import Servicios from '@/components/Servicios';
 import Agencia from '@/components/Agencia';
 import Inversion from '@/components/Inversion';
 import Contactanos from '@/components/Contactanos';
+import Subscribe from '@/components/Subscribe';
 
 export default function Home() {
   return (
@@ -108,7 +109,7 @@ export default function Home() {
           />
           <Typography
             variant='body1'
-            fontSize={{ xs: '11px', md: '14px' }}
+            fontSize={{ xs: '12.5px', md: '14px' }}
             fontFamily='Poppins'
             color='#fff'
             mb='50px'
@@ -127,6 +128,7 @@ export default function Home() {
         <Agencia />
         <Inversion />
         <Contactanos />
+        <Subscribe />
       </main>
     </>
   );

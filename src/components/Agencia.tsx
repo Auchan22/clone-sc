@@ -38,7 +38,7 @@ const Agencia: React.FC = () => {
 
       <Box
         display='flex'
-        alignItems='flex-start'
+        alignItems={{ xs: 'center', md: 'flex-start' }}
         justifyContent='center'
         flexDirection={{ xs: 'column', md: 'row' }}
         gap='15px'

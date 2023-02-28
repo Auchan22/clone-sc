@@ -10,7 +10,7 @@ interface Props {
 const ContactoCard: React.FC<Props> = ({ data }) => {
   return (
     <Box
-      width='30%'
+      width={{ xs: '80%', md: '30%' }}
       minHeight='300px'
       sx={{
         borderRadius: '10px',
