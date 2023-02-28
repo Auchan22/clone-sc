@@ -147,7 +147,8 @@ const Navbar: React.FC<Props> = () => {
 
   const [scrolled, setScrolled] = React.useState<boolean>(false);
   const changeScrolledState = () => {
-    window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
+    if (typeof window !== 'undefined')
+      window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
   };
 
   if (typeof window !== 'undefined') {

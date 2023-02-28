@@ -7,7 +7,6 @@ interface Props {
 }
 
 const AgenciaCard: React.FC<Props> = ({ data }) => {
-  console.log(data.title === 'Startup');
   return (
     <Box
       minHeight='80vh'
@@ -17,8 +16,6 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
         borderWidth: data.title === 'Startup' ? '10px 0px' : '1px',
         borderColor: data.title === 'Startup' ? '#7b00ff' : '#d4d4d4',
         borderStyle: 'solid',
-        boxShadow: data.title === 'Startup' && 'rgba(0,0,0,.25) 0 3px 11px 0',
-        // backgroundColor: 'red',
       }}
       display='flex'
       gap='5px'
@@ -26,6 +23,9 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
       flexDirection='column'
       justifyContent='center'
       alignItems='center'
+      boxShadow={
+        data.title === 'Startup' ? 'rgba(0,0,0,.25) 0 3px 11px 0' : 'null'
+      }
     >
       {data.descuento && (
         <Typography

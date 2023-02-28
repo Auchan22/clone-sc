@@ -66,7 +66,6 @@ export default function Home() {
             <img
               src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Dise-C3-B1o-sin-t-C3-ADtulo--281-29-578w.png'
               alt='Img'
-              minWidth='240px'
               width='35%'
               height='100%'
             />

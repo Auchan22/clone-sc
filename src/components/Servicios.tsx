@@ -4,7 +4,6 @@ import { Box, Typography, Tab, Tabs, Button } from '@mui/material';
 
 import * as React from 'react';
 import Link from 'next/link';
-import NAVITEMS from '@/assets/linkItems';
 
 const AntTabs = styled(Tabs)({
   borderBottom: '1px solid #e8e8e8',
@@ -72,11 +71,7 @@ function TabPanel(props: StyledTabsProps) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
