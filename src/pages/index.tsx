@@ -4,6 +4,7 @@ import { Box, Divider, Typography } from '@mui/material';
 import Gastos from '@/components/Gastos';
 import Servicios from '@/components/Servicios';
 import Agencia from '@/components/Agencia';
+import Inversion from '@/components/Inversion';
 
 export default function Home() {
   return (
@@ -123,6 +124,7 @@ export default function Home() {
         <Gastos />
         <Servicios />
         <Agencia />
+        <Inversion />
       </main>
     </>
   );
