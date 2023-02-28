@@ -5,6 +5,7 @@ import Gastos from '@/components/Gastos';
 import Servicios from '@/components/Servicios';
 import Agencia from '@/components/Agencia';
 import Inversion from '@/components/Inversion';
+import Contactanos from '@/components/Contactanos';
 
 export default function Home() {
   return (
@@ -125,6 +126,7 @@ export default function Home() {
         <Servicios />
         <Agencia />
         <Inversion />
+        <Contactanos />
       </main>
     </>
   );
