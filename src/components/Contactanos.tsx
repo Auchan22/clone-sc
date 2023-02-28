@@ -1,5 +1,6 @@
 import CONTACTO from '@/assets/contacto';
 import { Box, Typography } from '@mui/material';
+import AccordionPreguntas from './AccordionPreguntas';
 import ContactoCard from './ContactoCard';
 
 const Contactanos: React.FC = () => {
@@ -73,6 +74,7 @@ const Contactanos: React.FC = () => {
             </Typography>
           </div>
         </Box>
+        <AccordionPreguntas />
       </Box>
     </Box>
   );
