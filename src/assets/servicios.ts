@@ -12,13 +12,13 @@ const SERVICES: Servicios[] = [
     description:
       'Ofrece a tus clientes paquetes completos, diseñados para pequeños, medianos y grandes negocios con márgenes de utilidad para ti arriba del 100%.',
     price: 999,
-    img: '',
+    img: 'https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Facebook-1920w.png',
     href: '',
   },
   {
     title: 'Diseño de marca',
     description:
-      'Damos concepto, personalidad y estilo a la marca de tus clientes. Hacemos muchísimo más que solo un logotipo. \n Diseño original y único, con manual de marca incluído y entrega de propuestas a tus clientes con tu propia marca, listos para su aprobación.',
+      'Damos concepto, personalidad y estilo a la marca de tus clientes. Hacemos muchísimo más que solo un logotipo.  Diseño original y único, con manual de marca incluído y entrega de propuestas a tus clientes con tu propia marca, listos para su aprobación.',
     price: 2999,
     img: '',
     href: '',

@@ -45,3 +45,9 @@
 body {
   overflow-x: hidden;
 }
+
+.personalizedLink:hover {
+  background-color: #7b00ff;
+  color: #fff;
+  transition: all 125ms ease-in;
+}
