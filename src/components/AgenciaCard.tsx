@@ -1,6 +1,7 @@
 import { Agencia } from '@/assets/agencia';
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
+import StyledLink from './shared/StyledLink';
 
 interface Props {
   data: Agencia;
@@ -118,21 +119,7 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
           </Typography>
         </>
       )}
-      <Link
-        style={{
-          textDecoration: 'none',
-          marginTop: '15px',
-          padding: '10px 15px',
-          borderRadius: '10px',
-          border: '1px solid #7b00ff',
-          transition: 'all 125ms ease-in',
-          fontSize: '10px',
-        }}
-        className='personalizedLink'
-        href=''
-      >
-        Iniciar mi Agenda
-      </Link>
+      <StyledLink href=''>Iniciar mi Agenda</StyledLink>
     </Box>
   );
 };
