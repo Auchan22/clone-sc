@@ -1,7 +1,9 @@
 import CONTACTO from '@/assets/contacto';
 import { Box, Typography } from '@mui/material';
-import AccordionPreguntas from './AccordionPreguntas';
+import AccordionPreguntas from './shared/AccordionPreguntas';
 import ContactoCard from './ContactoCard';
+import { PreguntasFrecuentes } from './shared';
+import PREGUNTAS from '@/assets/preguntasFrecuentes';
 
 const Contactanos: React.FC = () => {
   return (
@@ -64,18 +66,7 @@ const Contactanos: React.FC = () => {
         gap='20px'
         flexDirection='column'
       >
-        <Box sx={{ textAlign: 'center' }} maxWidth='100%'>
-          <Typography fontFamily='Poppins' fontWeight='bold' fontSize='1.5rem'>
-            Preguntas Frecuentes
-          </Typography>
-          <div style={{ margin: '10px 0px' }}>
-            <Typography fontFamily='Poppins' fontSize='0.8rem'>
-              ¿Tienes alguna otra duda? Llámanos al{' '}
-              <span style={{ fontWeight: 'bold' }}>7776007713</span>
-            </Typography>
-          </div>
-        </Box>
-        <AccordionPreguntas />
+        <PreguntasFrecuentes preguntas={PREGUNTAS} label='' />
       </Box>
     </Box>
   );

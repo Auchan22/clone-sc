@@ -1,4 +1,4 @@
-interface Pregunta {
+export interface Pregunta {
   label: string;
   description: string[];
 }

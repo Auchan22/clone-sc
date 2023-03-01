@@ -2,7 +2,7 @@ import { Poppins } from 'next/font/google';
 
 import { Servicios } from '@/assets/servicios';
 import { Box, Typography } from '@mui/material';
-import StyledLink from '@/components/shared/StyledLink';
+import { StyledLink } from '@/components/shared';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['300', '600'] });
 

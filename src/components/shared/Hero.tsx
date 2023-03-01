@@ -8,7 +8,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   mh: string;
 }
 
-const Hero: React.FC<Props> = (props) => {
+export const Hero: React.FC<Props> = (props) => {
   const { backgroundColor, children, backgroundIMG, backgroundVIDEO, mh } =
     props;
   return (
@@ -54,5 +54,3 @@ const Hero: React.FC<Props> = (props) => {
     </Box>
   );
 };
-
-export default Hero;

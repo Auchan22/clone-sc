@@ -1,7 +1,7 @@
 import { Agencia } from '@/assets/agencia';
 import { Box, Typography } from '@mui/material';
-import Link from 'next/link';
-import StyledLink from './shared/StyledLink';
+
+import { PriceCard, StyledLink } from './shared';
 
 interface Props {
   data: Agencia;
@@ -9,25 +9,7 @@ interface Props {
 
 const AgenciaCard: React.FC<Props> = ({ data }) => {
   return (
-    <Box
-      minHeight='80vh'
-      width={{ xs: '80%', md: '25vw' }}
-      sx={{
-        borderRadius: '10px',
-        borderWidth: data.title === 'Startup' ? '10px 0px' : '1px',
-        borderColor: data.title === 'Startup' ? '#7b00ff' : '#d4d4d4',
-        borderStyle: 'solid',
-      }}
-      display='flex'
-      gap='5px'
-      padding='20px 15px'
-      flexDirection='column'
-      justifyContent='center'
-      alignItems='center'
-      boxShadow={
-        data.title === 'Startup' ? 'rgba(0,0,0,.25) 0 3px 11px 0' : 'null'
-      }
-    >
+    <PriceCard highlighted={data.title === 'Startup'}>
       {data.descuento && (
         <Typography
           variant='h4'
@@ -120,7 +102,7 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
         </>
       )}
       <StyledLink href=''>Iniciar mi Agenda</StyledLink>
-    </Box>
+    </PriceCard>
   );
 };
 

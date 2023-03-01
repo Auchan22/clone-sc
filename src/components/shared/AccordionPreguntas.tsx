@@ -3,22 +3,27 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PREGUNTAS from '@/assets/preguntasFrecuentes';
+import { Pregunta } from '@/assets/preguntasFrecuentes';
 import { Box } from '@mui/material';
 
-const AccordionPreguntas: React.FC = () => {
+interface Props {
+  preguntas: Pregunta[];
+}
+
+const AccordionPreguntas: React.FC<Props> = ({ preguntas }) => {
   return (
     <Box
       maxWidth='80%'
       minHeight='250px'
       display='flex'
-      flexDirection='column'
+      flexDirection={{ xs: 'column', md: 'row' }}
       flexWrap='wrap'
-      gap='20px'
+      gap='10px'
       justifyContent='space-between'
       alignItems='center'
+      mx='auto'
     >
-      {PREGUNTAS.map((p, index) => (
+      {preguntas.map((p, index) => (
         <Accordion
           key={index}
           sx={{

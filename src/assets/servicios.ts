@@ -26,7 +26,7 @@ const SERVICES: Servicios[] = [
       'Ofrece a tus clientes paquetes completos, diseñados para pequeños, medianos y grandes negocios con márgenes de utilidad para ti arriba del 100%.',
     descriptionCard:
       'Genera conexión con tus clientes con contenido hecho específicamente para ti, tus redes sociales nunca serán las mismas.',
-    price: 999,
+    price: 1999,
     img: 'https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Facebook-1920w.png',
     href: '/paquete-premium-de-redes-sociales',
     color: '#7b00ff',

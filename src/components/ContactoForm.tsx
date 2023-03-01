@@ -4,7 +4,7 @@ import { ValidationRule } from 'react-hook-form/dist/types';
 
 import emailjs from '@emailjs/browser';
 
-import { StyledButton } from './Subscribe';
+import { StyledButton } from './shared/Subscribe';
 import { useRef } from 'react';
 
 interface FormInputTextProps {

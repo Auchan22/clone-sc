@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from '@mui/material';
+import { Box, TextField, Typography } from '@mui/material';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from '@emotion/styled';
@@ -21,7 +21,7 @@ export const StyledButton = styled.button`
   }
 `;
 
-const Subscribe: React.FC = () => {
+export const Subscribe: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const form = useRef(null);
 
@@ -95,5 +95,3 @@ const Subscribe: React.FC = () => {
     </Box>
   );
 };
-
-export default Subscribe;

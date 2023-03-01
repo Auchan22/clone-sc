@@ -1,4 +1,4 @@
-import Hero from '@/components/Hero';
+import Hero from '@/components/shared/Hero';
 import { Box, Typography } from '@mui/material';
 import Head from 'next/head';
 import RocketIcon from '@mui/icons-material/Rocket';
