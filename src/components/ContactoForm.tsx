@@ -116,10 +116,15 @@ const ContactoForm: React.FC = () => {
       alignItems='center'
       justifyContent='center'
       gap='20px'
-      minWidth='35%'
+      minWidth={{ xs: '90vw', md: '35vw' }}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <Box display='flex' minWidth='100%' gap='20px'>
+      <Box
+        display='flex'
+        flexDirection={{ xs: 'column', md: 'row' }}
+        minWidth='100%'
+        gap='20px'
+      >
         <FormInputText control={control} label='Nombre' name='nombre' />
         <FormInputText
           control={control}

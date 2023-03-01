@@ -51,3 +51,15 @@ body {
   color: #fff;
   transition: all 125ms ease-in;
 }
+
+@media screen and (min-width: 720px) {
+  .culturaImg {
+    width: 40%;
+  }
+
+  .cuadroBackground {
+    top: 35% !important;
+    width: 40% !important;
+    height: 60% !important;
+  }
+}

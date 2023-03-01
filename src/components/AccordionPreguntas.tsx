@@ -23,7 +23,7 @@ const AccordionPreguntas: React.FC = () => {
           key={index}
           sx={{
             backgroundColor: 'transparent',
-            maxWidth: '40%',
+            maxWidth: { xs: '90vw', md: '40%' },
             borderRadius: '0px',
             color: '#fff',
             flexGrow: 1,
