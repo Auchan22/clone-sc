@@ -1,22 +1,26 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+
+import {
+  AppBar,
+  Box,
+  CssBaseline,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  Toolbar,
+  Typography,
+  Popper,
+} from '@mui/material';
+
 import NAVITEMS from '@/assets/linkItems';
 import Link from 'next/link';
-import { Popper } from '@mui/material';
+
 import styled from '@emotion/styled';
+import ClearIcon from '@mui/icons-material/Clear';
+import MenuIcon from '@mui/icons-material/Menu';
+import { useRouter } from 'next/router';
 
 interface Props {}
 
@@ -121,21 +125,31 @@ const Navbar: React.FC<Props> = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const router = useRouter();
+
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant='h6' sx={{ my: 2 }}>
-        Logo
-      </Typography>
-      <Divider />
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'right' }}>
+      <IconButton
+        color='inherit'
+        aria-label='close drawer'
+        onClick={() => handleDrawerToggle}
+        sx={{ mr: 2, display: { sm: 'none' } }}
+      >
+        <ClearIcon />
+      </IconButton>
+
       <List>
         {NAVITEMS.map((item, index) => (
-          <ListItem key={index} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText
-                primary={item.title}
-                sx={{ fontFamily: 'Roboto' }}
-              />
-            </ListItemButton>
+          <ListItem key={index}>
+            <Link href={item.href} style={{ textDecoration: 'none' }}>
+              <Typography
+                fontFamily='Poppins'
+                fontSize='0.9rem'
+                color={router.pathname === item.href ? '#000' : '#939393'}
+              >
+                {item.title}
+              </Typography>
+            </Link>
           </ListItem>
         ))}
       </List>
