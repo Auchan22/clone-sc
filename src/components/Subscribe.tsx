@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from '@emotion/styled';
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   background-color: #7b00ff;
   font-family: 'Poppins';
   font-size: 1rem;
@@ -31,7 +31,6 @@ const Subscribe: React.FC = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form.current);
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (email === '' || !emailRegex.test(email)) {
