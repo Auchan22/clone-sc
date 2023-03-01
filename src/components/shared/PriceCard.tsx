@@ -8,7 +8,7 @@ interface Props {
 export const PriceCard: React.FC<Props> = ({ highlighted, children }) => {
   return (
     <Box
-      minHeight='80vh'
+      minHeight='80%'
       width={{ xs: '80%', md: '25vw' }}
       sx={{
         borderRadius: '10px',
