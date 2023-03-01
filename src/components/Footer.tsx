@@ -15,7 +15,6 @@ const Footer: React.FC = () => {
         }}
         minWidth='100vw'
         minHeight='300px'
-        marginTop='30px'
         padding='50px 40px'
         display='flex'
         alignItems={{ xs: 'flex-start', md: 'center' }}

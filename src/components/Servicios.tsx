@@ -91,7 +91,7 @@ function a11yProps(index: number) {
 }
 
 const Servicios: React.FC = () => {
-  const matches = useMediaQuery('(min-width:320px)');
+  const matches = useMediaQuery('(max-width:768px)');
 
   const [value, setValue] = React.useState(0);
 

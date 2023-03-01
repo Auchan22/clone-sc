@@ -45,12 +45,12 @@ const AccordionPreguntas: React.FC = () => {
           </AccordionSummary>
           <AccordionDetails sx={{ border: '1px solid #d4d4d4' }}>
             {p.description.map((d, index) => (
-              <>
-                <Typography key={index} fontFamily='Poppins' fontSize='0.8rem'>
+              <div key={index}>
+                <Typography fontFamily='Poppins' fontSize='0.8rem'>
                   {d}
                 </Typography>
                 <br />
-              </>
+              </div>
             ))}
           </AccordionDetails>
         </Accordion>
