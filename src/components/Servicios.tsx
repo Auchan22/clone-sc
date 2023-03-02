@@ -17,6 +17,8 @@ const AntTabs = styled(Tabs)({
   '& .MuiTabs-indicator': {
     backgroundColor: '#7b00ff',
   },
+  maxWidth: '100vw',
+  overflowX: 'auto',
 });
 
 const AntTab = styled((props: StyledTabProps) => (
@@ -121,7 +123,7 @@ const Servicios: React.FC = () => {
         maxHeight='70%'
         display='flex'
         alignItems='center'
-        flexDirection={{ xs: 'row', md: 'column' }}
+        flexDirection='column'
         justifyContent='center'
         minWidth={{ xs: '100vw' }}
       >
@@ -136,7 +138,6 @@ const Servicios: React.FC = () => {
             aria-label='scrollable ant tabs example'
             variant='scrollable'
             scrollButtons='auto'
-            orientation={matches ? 'vertical' : 'horizontal'}
           >
             {SERVICES.map((s, index) => (
               <AntTab

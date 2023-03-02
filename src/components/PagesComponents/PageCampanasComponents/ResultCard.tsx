@@ -1,16 +1,12 @@
-import { Poppins } from 'next/font/google';
-
-import { Servicios } from '@/assets/servicios';
 import { Box, Typography } from '@mui/material';
-import { StyledLink } from '@/components/shared';
-
+import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ['latin'], weight: ['300', '600'] });
 
 interface Props {
-  data: Servicios;
+  data: { title: string; description: string; color: string };
 }
 
-const ServiciosCard: React.FC<Props> = ({ data }) => {
+export const ResultCard: React.FC<Props> = ({ data }) => {
   return (
     <Box
       width={{ xs: '90%', md: '30%' }}
@@ -22,6 +18,8 @@ const ServiciosCard: React.FC<Props> = ({ data }) => {
       justifyContent='center'
       gap='15px'
       flexDirection='column'
+      borderRadius='10px'
+      p='20px 15px'
     >
       <Typography
         fontWeight={600}
@@ -37,17 +35,8 @@ const ServiciosCard: React.FC<Props> = ({ data }) => {
         className={poppins.className}
         textAlign='left'
       >
-        {data.descriptionCard}
+        {data.description}
       </Typography>
-      <StyledLink
-        href={data.href}
-        className={poppins.className}
-        color={data.color}
-      >
-        Contratar
-      </StyledLink>
     </Box>
   );
 };
-
-export default ServiciosCard;

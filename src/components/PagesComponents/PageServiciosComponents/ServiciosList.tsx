@@ -13,6 +13,7 @@ const ServiciosList: React.FC = () => {
       sx={{ backgroundColor: '#fff' }}
       textAlign='center'
       py='20px'
+      px='20px'
     >
       <Typography
         fontWeight={600}
@@ -33,6 +34,7 @@ const ServiciosList: React.FC = () => {
         display='flex'
         alignItems='center'
         justifyContent='center'
+        flexDirection={{ xs: 'column', md: 'row' }}
         maxWidth='90%'
         flexWrap='wrap'
         gap='10px'

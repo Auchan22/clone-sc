@@ -19,10 +19,10 @@ export default function serviciosPage() {
         >
           <Box
             display='flex'
-            alignItems='flex-start'
+            alignItems={{ xs: 'center', md: 'flex-start' }}
             justifyContent='center'
             flexDirection='column'
-            height='60vh'
+            minHeight='60vh'
             width='100vw'
             padding='10% 10%'
             gap='10px'
@@ -30,7 +30,7 @@ export default function serviciosPage() {
             <Typography
               className={poppins.className}
               color='#fff'
-              fontSize='2.5rem'
+              fontSize='2rem'
               fontWeight={900}
             >
               (Re)Inventamos

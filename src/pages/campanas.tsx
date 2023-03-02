@@ -2,6 +2,7 @@ import { Pregunta } from '@/assets/preguntasFrecuentes';
 import {
   Informative,
   ObjetivoList,
+  ResultList,
 } from '@/components/PagesComponents/PageCampanasComponents';
 import { Campañas } from '@/components/PagesComponents/PageCampanasComponents/Campañas';
 
@@ -107,6 +108,7 @@ export default function campanasPage() {
         <ObjetivoList />
         <Informative />
         <Campañas />
+        <ResultList />
         <PreguntasFrecuentes
           preguntas={preguntas}
           label='¿Tienes alguna otra duda? Llámanos al  7776007713'
