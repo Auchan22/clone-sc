@@ -5,3 +5,4 @@ export * from './PriceCard';
 export * from './AccordionPreguntas';
 export * from './PreguntasFrecuentes';
 export * from './Subscribe';
+export * from './ContainerInfo';
