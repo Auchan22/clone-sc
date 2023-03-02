@@ -15,6 +15,7 @@ export const PriceCard: React.FC<Props> = ({ highlighted, children }) => {
         borderWidth: highlighted ? '10px 0px' : '1px',
         borderColor: highlighted ? '#7b00ff' : '#d4d4d4',
         borderStyle: 'solid',
+        backgroundColor: '#fff',
       }}
       display='flex'
       gap='5px'
