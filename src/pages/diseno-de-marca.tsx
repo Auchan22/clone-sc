@@ -1,6 +1,11 @@
 import { Pregunta } from '@/assets/preguntasFrecuentes';
 import PenTool from '@/components/Animations/PenTool';
 import {
+  LogotipoDescription,
+  MetodologiaList,
+  Precio,
+} from '@/components/PagesComponents/PageDiseñoComponents';
+import {
   HeadPage,
   Hero,
   PreguntasFrecuentes,
@@ -9,7 +14,6 @@ import {
 import { Box, Typography } from '@mui/material';
 
 import { Poppins } from 'next/font/google';
-import Script from 'next/script';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['300', '600'] });
 
@@ -80,15 +84,7 @@ export default function DiseñoMarcaPage() {
               fontSize={{ xs: '3rem', md: '4rem' }}
               fontWeight={600}
             >
-              (Re)Diseña
-            </Typography>
-            <Typography
-              className={poppins.className}
-              color='#fff'
-              fontSize='3rem'
-              fontWeight={poppins.style.fontWeight}
-            >
-              y dale poder a tu marca
+              (Re)Diseño de marca
             </Typography>
             <Typography
               className={poppins.className}
@@ -97,16 +93,18 @@ export default function DiseñoMarcaPage() {
               fontWeight={poppins.style.fontWeight}
               maxWidth={{ xs: '90%', md: '50%' }}
             >
-              Las empresas pequeñas nacen con un gran logo
+              Metodología
             </Typography>
           </Box>
         </Hero>
+        <Precio />
+        <LogotipoDescription />
+        <MetodologiaList />
         <PreguntasFrecuentes
           preguntas={preguntas}
           label='¿Tienes alguna otra duda? Llámanos al  7776007713'
         />
         <Subscribe />
-        <PenTool />
       </main>
     </>
   );
