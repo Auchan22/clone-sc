@@ -1,5 +1,9 @@
 import { Pregunta } from '@/assets/preguntasFrecuentes';
-import { NegocioList } from '@/components/PagesComponents/PagePWComponents';
+import {
+  BenefitsList,
+  CharacteristicsSiteList,
+  NegocioList,
+} from '@/components/PagesComponents/PagePWComponents';
 import {
   HeadPage,
   Hero,
@@ -104,6 +108,8 @@ export default function paginasWebPage() {
           </Box>
         </Hero>
         <NegocioList />
+        <CharacteristicsSiteList />
+        <BenefitsList />
         <PreguntasFrecuentes
           preguntas={preguntas}
           label='El que pregunta, nunca se equivoca'
