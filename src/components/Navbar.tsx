@@ -188,9 +188,12 @@ const Navbar: React.FC<Props> = () => {
             justifyContent: 'space-between',
           }}
         >
-          <Typography variant='h6' component='div'>
-            LOGO
-          </Typography>
+          <Link href='' style={{ textDecoration: 'none', color: '#fff' }}>
+            <Typography variant='h6' component='div'>
+              LOGO
+            </Typography>
+          </Link>
+
           <IconButton
             color='inherit'
             aria-label='open drawer'

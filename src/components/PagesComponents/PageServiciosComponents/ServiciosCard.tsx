@@ -14,7 +14,8 @@ const ServiciosCard: React.FC<Props> = ({ data }) => {
   return (
     <Box
       width={{ xs: '90%', md: '30%' }}
-      py='20px'
+      borderRadius='10px'
+      p='20px'
       minHeight='60%'
       boxShadow='rgb(0 0 0 / 5%) 0 3px 11px 0 '
       display='flex'
