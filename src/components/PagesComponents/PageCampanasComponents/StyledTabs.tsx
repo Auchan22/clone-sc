@@ -65,7 +65,7 @@ interface StyledTabProps {
 }
 
 interface Props {
-  Tabs: Campaña[];
+  Tabs: any[];
   handleChange: (event: React.SyntheticEvent, newValue: number) => void;
   value: number;
 }

@@ -12,7 +12,7 @@ export const StyledLink = styled(Link)`
   font-size: 10px;
   &:hover {
     transition: 125ms all ease-in;
-    color: #fff;
+    color: ${(props) => (props.color ? '#7b00ff' : props.color)};
     background-color: ${(props) => (props.color ? props.color : '#7b00ff')};
     border: 1px solid ${(props) => (props.color ? props.color : '#7b00ff')};
   }

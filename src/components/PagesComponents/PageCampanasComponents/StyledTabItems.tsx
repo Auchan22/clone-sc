@@ -29,7 +29,7 @@ function TabPanel(props: StyledTabsProps) {
 }
 
 interface Props {
-  Tabs: Campaña[];
+  Tabs: any[];
   value: number;
 }
 
@@ -71,11 +71,12 @@ export const StyledTabItems: React.FC<Props> = ({ Tabs, value }) => {
                   fontWeight={500}
                   color='#000'
                   fontSize='1.5rem'
+                  className={poppins.className}
                 >
-                  {s.subTitle}
+                  {s.subTitle || s.title}
                 </Typography>
                 <ul>
-                  {s.points.map((p, index) => (
+                  {s.points.map((p: any, index: number) => (
                     <li key={index}>
                       <Typography
                         fontFamily='Poppins'
