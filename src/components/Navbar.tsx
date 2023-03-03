@@ -233,7 +233,7 @@ const Navbar: React.FC<Props> = () => {
                   {item.title}
                 </Typography>
 
-                <StyledPopper
+                {/* <StyledPopper
                   open={open}
                   anchorEl={anchorEl}
                   placement='bottom-end'
@@ -259,7 +259,7 @@ const Navbar: React.FC<Props> = () => {
                       <Box>a</Box>
                     </Link>
                   ))}
-                </StyledPopper>
+                </StyledPopper> */}
               </Link>
             ))}
           </Box>
