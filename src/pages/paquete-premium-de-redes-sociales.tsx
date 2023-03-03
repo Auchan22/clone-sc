@@ -1,5 +1,6 @@
 import { Pregunta } from '@/assets/preguntasFrecuentes';
 import {
+  CharacteristicsList,
   PlanesPremiumList,
   RedesSociales,
 } from '@/components/PagesComponents/PageRSPremiumComponents';
@@ -109,7 +110,7 @@ export default function PaquetePremiumRSPage() {
         </Hero>
         <PlanesPremiumList />
         <RedesSociales />
-
+        <CharacteristicsList />
         <PreguntasFrecuentes
           preguntas={preguntas}
           label='¿Tienes alguna otra duda? Llámanos al 7776007713'
