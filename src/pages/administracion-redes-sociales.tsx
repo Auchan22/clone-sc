@@ -1,5 +1,9 @@
 import { Pregunta } from '@/assets/preguntasFrecuentes';
-import { RedesList } from '@/components/PagesComponents/PageRSComponents';
+import {
+  OurPlan,
+  PlanesList,
+  RedesList,
+} from '@/components/PagesComponents/PageRSComponents';
 import {
   HeadPage,
   Hero,
@@ -69,7 +73,7 @@ export default function redesSocialesPage() {
             justifyContent='center'
             flexDirection='column'
             gap='20px'
-            padding='40px'
+            padding='20px'
             mb='50px'
           >
             <Typography
@@ -101,6 +105,8 @@ export default function redesSocialesPage() {
             </StyledLink>
           </Box>
         </Hero>
+        <OurPlan />
+        <PlanesList />
         <RedesList />
         <PreguntasFrecuentes
           label='¿Tienes alguna otra duda? Llámanos al 7776007713'
