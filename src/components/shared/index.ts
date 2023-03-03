@@ -6,3 +6,4 @@ export * from './AccordionPreguntas';
 export * from './PreguntasFrecuentes';
 export * from './Subscribe';
 export * from './ContainerInfo';
+export * from './ButtonWhatsApp';
