@@ -116,13 +116,16 @@ const Inversion: React.FC = () => {
               my='20px'
               display='flex'
               alignItems='center'
-              justifyContent='space-between'
+              mx={{ xs: 'auto', md: 'none' }}
+              gap='20px'
+              justifyContent={{ xs: 'center', md: 'space-between' }}
               width='80%'
               fontFamily='Poppins'
               flexDirection={{ xs: 'column', md: 'row' }}
             >
               <LinkButton label='10%' href='' />
               <LinkButton label='20%' href='' />
+              <LinkButton label='30%' href='' />
               <LinkButton label='Catálogo' href='' />
             </Box>
           </Box>
