@@ -70,7 +70,7 @@ export default function culturaPage() {
               Cultura
             </Typography>
             <Typography fontFamily='Poppins' fontSize='1rem'>
-              Conoce Social Conecta y el equipo que lo conforma.
+              Conoce Turbo Creativo y el equipo que lo conforma.
             </Typography>
           </Box>
         </Hero>
@@ -93,7 +93,7 @@ export default function culturaPage() {
             fontSize='1.5rem'
             textAlign='center'
           >
-            ¡Nosotros somos Social Conecta!
+            ¡Nosotros somos Turbo Creativo!
           </Typography>
           <div
             className='cuadroBackground'
@@ -119,7 +119,7 @@ export default function culturaPage() {
             <img
               width='100%'
               height='70%'
-              alt='Nosotros somos Conecta'
+              alt='Nosotros somos Turbo'
               src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/IMG_0775-1920w.png'
               style={{ zIndex: 0 }}
               className='culturaImg'

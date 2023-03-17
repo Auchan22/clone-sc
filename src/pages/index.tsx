@@ -1,4 +1,4 @@
-import { Hero } from '@/components/shared/';
+import { Hero, StyledLink } from '@/components/shared/';
 import { Box, Divider, Typography } from '@mui/material';
 import Gastos from '@/components/Gastos';
 import Servicios from '@/components/Servicios';
@@ -13,59 +13,51 @@ export default function Home() {
       <HeadPage pageName='Inicio' />
       <main>
         <Hero
-          backgroundColor='#8b0404'
+          backgroundColor='#7b00ff80'
           mh='90vh'
           backgroundVIDEO='https://vid.cdn-website.com/7b521824/videos/bqJL7YHTgWpYoAys6Uuf_638308321-v.mp4'
         >
           <Box
+            minWidth='80%'
+            minHeight='70vh'
             display='flex'
-            alignItems='center'
+            alignItems='flex-start'
             justifyContent='center'
-            flexDirection={{ xs: 'column', md: 'row' }}
-            height='100%'
-            paddingTop='5%'
+            flexDirection='column'
+            padding='20px 15vw'
+            sx={{ color: '#fff' }}
           >
-            <Box textAlign='center' color='#fff'>
-              <h4 style={{ lineHeight: '0.5' }}>
-                <span
-                  style={{
-                    fontSize: '1em',
-                    fontWeight: 700,
-                  }}
-                >
-                  Abre tu propia
-                </span>
-              </h4>
-              <h3 style={{ lineHeight: '0.5', fontSize: '1.5rem' }}>
-                <span style={{ fontWeight: '700' }}>Agencia de Marketing</span>
-              </h3>
-              <h3 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '0.7rem', fontWeight: '700' }}>
-                  queremos ser la otra mitad de tu emprendimiento
-                </span>
-              </h3>
-              <h1 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '3rem', fontWeight: 700 }}>
-                  50% DESC
-                </span>
-              </h1>
-              <h6 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '0.5rem', fontWeight: 700 }}>
-                  Vigencia del 23 al 28 de Febrero de 2023 CUPÓN: TUOTRAMITAD
-                </span>
-              </h6>
-              <h3 style={{ lineHeight: '0.5' }}>
-                <span style={{ fontSize: '1.8rem', fontWeight: '700' }}>
-                  CUPÓN: TUOTRAMITAD
-                </span>
-              </h3>
-            </Box>
-            <img
-              src='https://lirp.cdn-website.com/5a4f43f8/dms3rep/multi/opt/Dise-C3-B1o-sin-t-C3-ADtulo--281-29-578w.png'
-              alt='Img'
-              width='35%'
-              height='100%'
-            />
+            <Typography
+              fontFamily='Poppins'
+              fontWeight='bold'
+              fontSize='2.5rem'
+            >
+              Somos la Agencia para tu Agencia
+            </Typography>
+            <Typography fontFamily='Poppins' fontSize='1rem'>
+              Abre tu propia agencia de Marketing
+            </Typography>
+            <Typography
+              fontFamily='Poppins'
+              fontSize='1rem'
+              maxWidth={{ xs: '100%', md: '60%' }}
+              mt='20px'
+            >
+              Trabajamos como marca blanca para tu agencia. Tu marca, tus
+              precios,{' '}
+              <span
+                style={{
+                  fontWeight: 'bold',
+                  color: 'white',
+                  lineHeight: 1.5,
+                }}
+              >
+                nuestra infraestructura y personal
+              </span>
+            </Typography>
+            <StyledLink href='/' color='#ffffff'>
+              Agendar una Demostración
+            </StyledLink>
           </Box>
         </Hero>
         <Box

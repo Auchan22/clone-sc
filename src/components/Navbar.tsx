@@ -188,7 +188,7 @@ const Navbar: React.FC<Props> = () => {
             justifyContent: 'space-between',
           }}
         >
-          <Link href='' style={{ textDecoration: 'none', color: '#fff' }}>
+          <Link href='/' style={{ textDecoration: 'none', color: '#fff' }}>
             <Typography variant='h6' component='div'>
               LOGO
             </Typography>
