@@ -182,7 +182,7 @@ const Servicios: React.FC = () => {
                     fontWeight='bold'
                     color='#7b00ff'
                   >
-                    {s.title} desde ${s.price} MXN
+                    {s.title} desde ${s.price} USD
                   </Typography>
                   <Typography
                     fontFamily='Poppins'
