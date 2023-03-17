@@ -1,6 +1,5 @@
 import CONTACTO from '@/assets/contacto';
 import { Box, Typography } from '@mui/material';
-import AccordionPreguntas from './shared/AccordionPreguntas';
 import ContactoCard from './ContactoCard';
 import { PreguntasFrecuentes } from './shared';
 import PREGUNTAS from '@/assets/preguntasFrecuentes';

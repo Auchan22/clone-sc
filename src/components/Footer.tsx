@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
       >
         <Box minWidth='50%'>
           <Link href='/'>
-            <img alt='Logo Social Conecta' />
+            <img alt='Logo Turbo Creativo' />
           </Link>
           <List sx={{ display: 'flex' }}>
             {REDES.map((r, index) => (

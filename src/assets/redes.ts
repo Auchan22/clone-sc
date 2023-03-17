@@ -1,4 +1,3 @@
-import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -17,11 +16,6 @@ export interface RedesData {
 }
 
 const REDES: Redes[] = [
-  {
-    href: '/',
-    icon: TwitterIcon,
-    label: 'Facebook',
-  },
   {
     href: '/',
     icon: FacebookIcon,

@@ -21,19 +21,6 @@ const CONTACTO: Contacto[] = [
     href: '',
   },
   {
-    title: 'Llámanos',
-    description:
-      'Para consultas y preguntas generales, comuníquese con nosotros por llamada directa:',
-    btnLabel: 'Llámenos',
-    icon: LocalPhoneIcon,
-    phoneNumbers: [
-      { country: 'Esp', number: '+34 (91) 080-0503' },
-      { country: 'Esp', number: '+34 (91) 080-0503' },
-      { country: 'Esp', number: '+34 (91) 080-0503' },
-    ],
-    href: '',
-  },
-  {
     title: 'Esperamos tu mail',
     description:
       'Consultas y preguntas generales, comuníquese con nosotros por correo electrónico',
