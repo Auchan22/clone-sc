@@ -38,8 +38,7 @@ const Footer: React.FC = () => {
             ))}
           </List>
           <Typography fontFamily='Poppins' maxWidth='50%'>
-            México, Latinoamérica, Estados Unidos y España. © 2022 Social
-            Conecta
+            Latinoamérica, Estados Unidos y España. © 2022 Turbo Creativo
           </Typography>
         </Box>
         <Box
@@ -100,27 +99,6 @@ const Footer: React.FC = () => {
                 Agencia de Marketing
               </Link>
             </ListItem>
-          </List>
-        </Box>
-        <Box
-          display='flex'
-          flexDirection='column'
-          gap='15px'
-          alignItems='flex-start'
-        >
-          <Typography fontFamily='Poppins' fontWeight='bold'>
-            Contacto{' '}
-          </Typography>
-          <List sx={{ fontFamily: 'Poppins', fontSize: '14px' }}>
-            <ListItem sx={{ padding: '0px' }}>
-              España +34 (91) 080-0503
-            </ListItem>
-            <ListItem sx={{ padding: '0px' }}>
-              México (+52) 777 600 77 13
-            </ListItem>
-            <ListItem sx={{ padding: '0px' }}>Colombia 031 3814966</ListItem>
-            <ListItem sx={{ padding: '0px' }}>Chile +56 (2) 2583-2044</ListItem>
-            <ListItem sx={{ padding: '0px' }}>Perú +51 (1) 642-9206</ListItem>
           </List>
         </Box>
       </Box>

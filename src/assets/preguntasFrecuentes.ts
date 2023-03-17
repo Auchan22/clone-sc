@@ -7,7 +7,7 @@ const PREGUNTAS: Pregunta[] = [
   {
     label: '¿Quiénes somos y qué hacemos?',
     description: [
-      'Social Conecta es la agencia de marketing digital  que ayuda a las pequeñas y medianas empresas a crecer a tráves del uso de las nueva tecnologías.',
+      'Turbo Creativo es la agencia de marketing digital  que ayuda a las pequeñas y medianas empresas a crecer a tráves del uso de las nueva tecnologías.',
       'Así como brindar a los nuevos emprendedores las herramientas y personal para tener su propia agencia de marketing digital.',
     ],
   },
@@ -21,14 +21,14 @@ const PREGUNTAS: Pregunta[] = [
   {
     label: '¿En dónde dan servicio?',
     description: [
-      'Nuestra sede se encuentra en México pero eso no nos límita, ofrecemos servicio a toda Latinoamérica, Estados Unidos y España. ',
+      'Nuestra sede se encuentra en Chile y Colombia pero eso no nos límita, ofrecemos servicio a toda Latinoamérica, Estados Unidos y España. ',
     ],
   },
   {
     label: '¿Por qué trabajar con nosotros?',
     description: [
-      'Contamos con un equipo de expertos en el área de Marketing digital,  siendo más de 250 colaboradores en Social Conecta.',
-      'La calidad y el precio nos avalan, actualmente manejamos más de 2,500 cuentas y más de 300 Agencias repartidas en México, Latinoamérica, Estados Unidos y España. ',
+      'Contamos con un equipo de expertos en el área de Marketing digital,  siendo más de 250 colaboradores en Turbo Creativo.',
+      'La calidad y el precio nos avalan, actualmente manejamos más de 2,500 cuentas y más de 300 Agencias repartidas en Chile, Colombia, Latinoamérica, Estados Unidos y España. ',
     ],
   },
   {
