@@ -49,7 +49,7 @@ export const VideoOptionCard: React.FC<Props> = ({ data }) => {
             >
               {o.price}{' '}
               <span className={poppins.className} style={{ fontSize: '1rem' }}>
-                MXN
+                USD
               </span>
             </Typography>
             <Typography

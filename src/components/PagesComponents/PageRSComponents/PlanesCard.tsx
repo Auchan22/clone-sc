@@ -70,7 +70,7 @@ export const PlanesCard: React.FC<Props> = ({ data }) => {
             >
               ${o.precio}{' '}
               <span className={poppins.className} style={{ fontSize: '1rem' }}>
-                MXN
+                USD
               </span>
             </Typography>
             {index === 1 && (
@@ -85,7 +85,7 @@ export const PlanesCard: React.FC<Props> = ({ data }) => {
                   className={poppins.className}
                   style={{ fontSize: '0.8rem' }}
                 >
-                  MXN
+                  USD
                 </span>
               </Typography>
             )}

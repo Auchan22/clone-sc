@@ -103,7 +103,7 @@ export const ObjetivoList: React.FC = () => {
                 color='#3a206d'
                 fontSize='1.5rem'
               >
-                $ {o.price} <span style={{ fontSize: '1rem' }}>MXN</span>
+                $ {o.price} <span style={{ fontSize: '1rem' }}>USD</span>
               </Typography>
               <Typography
                 className={poppins.className}

@@ -92,7 +92,7 @@ export const NegocioCard: React.FC<Props> = ({ data }) => {
                   className={poppins.className}
                   style={{ fontSize: '1rem' }}
                 >
-                  MXN
+                  USD
                 </span>
               </Typography>
               <Typography

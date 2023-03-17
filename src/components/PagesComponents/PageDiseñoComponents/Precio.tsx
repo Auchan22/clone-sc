@@ -50,7 +50,7 @@ export const Precio: React.FC = () => {
           className={poppins.className}
           color='#000'
         >
-          $ 2,999 <span style={{ fontSize: '0.8rem' }}>MXN</span>
+          $ 2,999 <span style={{ fontSize: '0.8rem' }}>USD</span>
         </Typography>
         <StyledLink href='' className={poppins.className}>
           Contratar
