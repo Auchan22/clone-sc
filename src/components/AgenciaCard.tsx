@@ -57,7 +57,7 @@ const AgenciaCard: React.FC<Props> = ({ data }) => {
             }}
           >
             ${data.amountDescuento}{' '}
-            <span style={{ fontSize: '14px' }}>MXN</span>
+            <span style={{ fontSize: '14px' }}>USD</span>
           </span>
         </Typography>
       )}
